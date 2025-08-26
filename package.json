@@ -4,15 +4,11 @@
   "description": "Context Control MCP - Git-powered context management for AI sessions. Reduces context from 200k to 3k tokens.",
   "type": "module",
   "main": "context-control-server.js",
-  "bin": {
-    "ccmcp": "./cli/ccmcp.js"
-  },
   "scripts": {
     "start": "node context-control-server.js",
     "dev": "node --watch context-control-server.js",
-    "test": "jest",
+    "test": "echo 'No tests configured yet - run npm run start to test server'",
     "build": "echo 'No build needed for MCP server'",
-    "setup": "node setup.js",
     "hooks": "node context-control-server.js --command setup_hooks",
     "dashboard": "node context-control-server.js --command metrics_dashboard",
     "resume": "node context-control-server.js --command smart_resume",
@@ -60,10 +56,9 @@
   },
   "files": [
     "context-control-server.js",
-    "cli/",
-    "docs/",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "SETUP.md"
   ],
   "publishConfig": {
     "access": "public",
